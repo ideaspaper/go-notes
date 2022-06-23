@@ -24,8 +24,6 @@ Contents:
 
 ## If/else statement
 
-**main.go**
-
 ```go
 package main
 
@@ -44,8 +42,6 @@ func main() {
 ## Short-circuiting
 
 Go evaluates conditions using a method known as short-circuiting.
-
-**main.go**
 
 ```go
 package main
@@ -74,8 +70,6 @@ In the code above, since `age := 5`, `lessThan10(age)` will evaluates to `true`.
 
 ## If with an initialization statement
 
-**main.go**
-
 ```go
 package main
 
@@ -100,8 +94,6 @@ func main() {
 ## Switch statement
 
 By default, `switch` in Go will not fall-through. So we do not need to use `break` statement.
-
-**main.go**
 
 ```go
 package main
@@ -130,8 +122,6 @@ func main() {
 
 If you need `switch` statement to have fall-through behaviour, you can use `fallthrough` keyword.
 
-**main.go**
-
 ```go
 package main
 
@@ -159,8 +149,6 @@ func main() {
 
 Instead of using the `fallthrough` keyword as example above, you can use the `case` statement to match multiple values as below.
 
-**main.go**
-
 ```go
 package main
 
@@ -181,8 +169,6 @@ func main() {
 ```
 
 ## Switch with no expression
-
-**main.go**
 
 ```go
 package main
