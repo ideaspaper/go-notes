@@ -2,7 +2,7 @@
 
 Contents:
 
-- [Operators](#operators)
+- [Conditional operators](#conditional-operators)
 - [If/else statement](#ifelse-statement)
 - [Short-circuiting](#short-circuiting)
 - [If with an initialization statement](#if-with-an-initialization-statement)
@@ -11,7 +11,7 @@ Contents:
 - [Case with multiple values](#case-with-multiple-values)
 - [Switch with no expression](#switch-with-no-expression)
 
-## Operators
+## Conditional operators
 
 | Operator |        Description       |
 |:--------:|:------------------------:|
