@@ -68,7 +68,7 @@ func swap(a, b *int) {
 }
 
 func addDesu(input *string) {
-	*input = *input + "です"
+	*input = *input + "です" // desu
 }
 
 func main() {
