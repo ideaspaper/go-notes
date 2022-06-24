@@ -80,7 +80,7 @@ func main() {
 
 ## Labels
 
-Doing loop with labels as below is not advised. The example below only serves as a demonstration of what label is.
+Looping with label as below is not advised, since it is harder to read. The example below only serves as a demonstration of what label is.
 
 ```go
 package main
