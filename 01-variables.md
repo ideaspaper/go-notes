@@ -134,7 +134,7 @@ func main() {
 
 ## Converting type
 
-### String to numeric
+### String to numeric and boolean
 
 ```go
 package main
