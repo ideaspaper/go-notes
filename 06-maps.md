@@ -1,8 +1,10 @@
 # Maps
 
 Contents:
+
 - [Declaring a map](#declaring-a-map)
 - [Deleting an element](#deleting-an-element)
+- [Checking if a key is exists or not](#checking-if-a-key-is-exists-or-not)
 
 ## Declaring a map
 
@@ -36,5 +38,27 @@ func main() {
 	fmt.Println(m)
 	delete(m, "lastName")
 	fmt.Println(m)
+}
+```
+
+## Checking if a key is exists or not
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	m := map[string]int{
+		"first": 1,
+		"second": 2,
+	}
+
+	result, ok := m["first"]
+	if ok {
+		fmt.Println(result)
+	} else {
+		fmt.Println("does not exists")
+	}
 }
 ```
