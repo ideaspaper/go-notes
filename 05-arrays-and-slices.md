@@ -6,6 +6,7 @@ Contents:
 - [Declaring a slice](#declaring-a-slice)
 - [Append and exceeding capacity](#append-and-exceeding-capacity)
 - [Copy, insert and remove](#copy-insert-and-remove)
+- [Common use of `cap()`](#common-use-of-cap)
 
 ## Declaring an array
 
@@ -164,3 +165,22 @@ func main() {
 	// [1 2 3 5 6]
 }
 ```
+
+## Common use of `cap()`
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	a := make([]int, 5)
+	fmt.Println(a) // [0 0 0 0 0]
+	for i := range a {
+		a[i] = i
+	}
+	fmt.Println(a) // [0 1 2 3 4]
+}
+```
+
+In this example, we used `make()` to create a slice and had it pre-allocate 5 elements. We then used the `cap()` function in the loop to iterate through each zeroed element, filling each until it reached the pre-allocated capacity. While we can achive the same result using `append()`, using `cap()` will avoid any additional memory allocations that would have been needed using the `append()` function.
