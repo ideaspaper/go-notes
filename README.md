@@ -8,3 +8,5 @@ Contents:
 1. [Functions](./04-functions.md)
 1. [Arrays and slices](./05-arrays-and-slices.md)
 1. [Maps](./06-maps.md)
+1. [Structs](./07-structs)
+1. [Methods](./08-methods.md)
